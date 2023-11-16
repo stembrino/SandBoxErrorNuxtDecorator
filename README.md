@@ -1,75 +1,36 @@
-# Nuxt 3 Minimal Starter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Error Demo of Nuxt with vue-facing-decorator
 
-## Setup
+Versions:
+"nuxt": "^3.8.1",
+"vue-facing-decorator": "^3.0.4"
 
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+To generate error:
+```
+yarn
+yarn generate
 ```
 
-## Development Server
+The erro LOG:
+```console
+ ERROR  Unexpected character '@' (Note that you need plugins to import files that are not JavaScript)
+file: C:/Users/User/GitHubFette/SandBoxErrorNuxtDecorator/components/Test.vue?vue&type=script&lang.ts:4:0
+2: import { Vue, Component } from "vue-facing-decorator";
+3:
+4: @Component
+   ^
+5: export default class Test extends Vue {
+6:  helloWorld = "hello world";
 
-Start the development server on `http://localhost:3000`:
 
-```bash
-# npm
-npm run dev
+ ERROR  Nuxt Build Error: Unexpected character '@' (Note that you need plugins to import files that are not JavaScript)
 
-# pnpm
-pnpm run dev
+  at error (/C:/Users/User/GitHubFette/SandBoxErrorNuxtDecorator/node_modules/rollup/dist/es/shared/node-entry.js:2287:30)
+  at Module.error (/C:/Users/User/GitHubFette/SandBoxErrorNuxtDecorator/node_modules/rollup/dist/es/shared/node-entry.js:13745:16)
+  at Module.tryParse (/C:/Users/User/GitHubFette/SandBoxErrorNuxtDecorator/node_modules/rollup/dist/es/shared/node-entry.js:14476:25)
+  at Module.setSource (/C:/Users/User/GitHubFette/SandBoxErrorNuxtDecorator/node_modules/rollup/dist/es/shared/node-entry.js:14077:39)
+  at ModuleLoader.addModuleSource (/C:/Users/User/GitHubFette/SandBoxErrorNuxtDecorator/node_modules/rollup/dist/es/shared/node-entry.js:24649:20)
+  at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
+error Command failed with exit code 1.
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
