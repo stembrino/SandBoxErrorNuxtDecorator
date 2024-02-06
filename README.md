@@ -1,10 +1,6 @@
 
 # Error Demo of Nuxt with vue-facing-decorator
 
-Versions:
-"nuxt": "^3.8.1",
-"vue-facing-decorator": "^3.0.4"
-
 To generate error:
 ```
 yarn
